@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canvas Tut</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        #mycanvas {
+            display: block;
+            margin: 0 auto;
+            height: 50vh;
+            width: 50%;
+            border: 2px solid black;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <ul>
+            <li><input type="button" value="Brush" data-val="1" onclick="changeTool(this)"></li>
+            <li><input type="button" value="line" data-val="2" onclick="changeTool(this)"></li>
+            <li><input type="button" value="Rectangle" data-val="3" onclick="changeTool(this)"></li>
+            <li><input type="button" value="Circle" data-val="4" onclick="changeTool(this)"></li>
+            <li><input type="button" value="Clear" onclick='clearCanvas()'></li>
+        </ul>
+    </div>
+    <canvas id="mycanvas"></canvas>
+    <script src="drawing.js"></script>
+</body>
+
+</html>
